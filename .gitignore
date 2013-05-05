@@ -1,4 +1,5 @@
 /.bundle
+/.idea
 /.env*
 /.rbenv-version
 /.sass-cache

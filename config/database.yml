@@ -1,17 +1,22 @@
 development:
-  adapter: postgresql
+  adapter: mysql
   encoding: unicode
-  database: boxen_development
+  database: roomorama_boxen
   pool: 5
   host: localhost
-  port: <%= ENV["BOXEN_POSTGRESQL_PORT"] || 5432 %>
+  port: 3306
+  username: root
+  password:
 
 test:
-  adapter: postgresql
+  adapter: mysql
   encoding: unicode
-  database: boxen_test
+  database: roomorama_boxen_test
   pool: 5
-  port: <%= ENV["BOXEN_POSTGRESQL_PORT"] || 5432 %>
+  host: localhost
+  port: 3306
+  username: root
+  password:
 
 production:
   development
