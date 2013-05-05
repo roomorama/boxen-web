@@ -1,13 +1,11 @@
-ruby   "1.9.3"
+#ruby   "1.9.3"
 source "https://rubygems.org"
 
 gem "dotenv",             "0.4.0"
 gem "erubis",             "2.7.0"
 gem "jquery-rails",       "2.1.4"
 gem "omniauth-github",    "1.0.3"
-gem "pg",                 "0.14.1"
 gem "rails",              "3.2.13"
-gem "unicorn",            "4.5.0"
 
 group :assets do
   gem "coffee-rails", "3.2.2"
@@ -16,6 +14,9 @@ group :assets do
 end
 
 group :development, :test do
-  gem "heroku"
   gem "pry"
+end
+
+group :production do
+  gem "unicorn"
 end
