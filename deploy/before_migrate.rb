@@ -1,7 +1,7 @@
 Chef::Log.info "Looking for files to symlink in #{release_path}/../../shared/config/*"
 rails_env = new_resource.environment["RAILS_ENV"]
 
-known_configs = [".env", ".env.#{rails_env}"].map{|c| "#{release_path}/../../shared/config/#{c}" }
+known_configs = [".env"].map{|c| "#{release_path}/../../shared/config/#{c}" }
 files_to_symlink =  Dir.glob("#{release_path}/../../shared/config/*") + known_configs
 
 files_to_symlink.each do |config|
