@@ -1,7 +1,7 @@
 ruby   "1.9.3"
 source "https://rubygems.org"
 
-gem "dotenv-rails",             ">= 0.7.0"
+gem "dotenv"
 gem "erubis",             "2.7.0"
 gem "jquery-rails",       "2.1.4"
 gem "omniauth-github",    "1.0.3"

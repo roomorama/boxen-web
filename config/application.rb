@@ -1,4 +1,6 @@
 require File.expand_path("../boot", __FILE__)
+require 'dotenv'
+Dotenv.load
 
 require "action_controller/railtie"
 require "active_record/railtie"
