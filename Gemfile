@@ -1,4 +1,4 @@
-#ruby   "1.9.3"
+ruby   "1.9.3"
 source "https://rubygems.org"
 
 gem "dotenv-rails",             ">= 0.7.0"
@@ -6,6 +6,7 @@ gem "erubis",             "2.7.0"
 gem "jquery-rails",       "2.1.4"
 gem "omniauth-github",    "1.0.3"
 gem "rails",              "3.2.13"
+gem 'mysql2', '~> 0.3.10'
 
 group :assets do
   gem "coffee-rails", "3.2.2"

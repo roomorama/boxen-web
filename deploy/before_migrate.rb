@@ -9,7 +9,7 @@ files_to_symlink.each do |config|
   Chef::Log.info "Checking shared config #{config}"
   if ::File.exists?("#{release_path}/#{::File.basename(config)}")
     Chef::Log.info "skipping #{config}"
-  else
+  elsif ::File.exists?(config)
     Chef::Log.info "Symlinking #{config}"
     system("ln -s #{config} #{release_path}/#{::File.basename(config)}")
   end
