@@ -94,9 +94,6 @@ sudo -p "    Password for sudo again: "  true
 
 cd /opt/boxen/repo
 export BOXEN_REPO_NAME=<%= view.repo_name %>
-sudo bundle
-cd /opt/boxen/repo
-bundle
 script/boxen --token <%= view.access_token %> --login <%= view.login %>
 
 cd $HOME
